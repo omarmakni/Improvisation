@@ -30,11 +30,6 @@ public class Jazz extends Activity
        button = (Button) findViewById(R.id.button);
        scratchImageView = (ScratchImageView) findViewById(R.id.scratchView1);
 
-       radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-       kitkat = (RadioButton) findViewById(R.id.KitKat);
-       lollipop = (RadioButton) findViewById(R.id.Lollipop);
-       marshmallow = (RadioButton) findViewById(R.id.Marshmallow);
-
        scratchImageView.setRevealListener(new ScratchImageView.IRevealListener() {
            @Override
            public void onRevealed(ScratchImageView scratchImageView) {
@@ -47,27 +42,7 @@ public class Jazz extends Activity
            @Override
            public void onClick(View view) {
 
-               if (!scratchImageView.isRevealed()) {
 
-                   Toast.makeText(Jazz.this, "Please Scratch The Whole Image First", Toast.LENGTH_LONG).show();
-
-               } else {
-
-                   switch (radioGroup.getCheckedRadioButtonId()) {
-
-                       case R.id.Lollipop:
-                           Toast.makeText(Jazz.this, "Wrong Captcha Entered.", Toast.LENGTH_LONG).show();
-                           break;
-
-                       case R.id.Marshmallow:
-                           Toast.makeText(Jazz.this, "Wrong Captcha Entered.", Toast.LENGTH_LONG).show();
-                           break;
-
-                       case R.id.KitKat:
-                           Toast.makeText(Jazz.this, "You Have Entered Correct Captcha Code.", Toast.LENGTH_LONG).show();
-                           break;
-                   }
-               }
            }
        });
 

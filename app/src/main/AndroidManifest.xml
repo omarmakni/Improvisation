@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Jazz"></activity>
+
+        <activity
+            android:name=".Stages_menu"
+            android:label="@string/title_activity_stages_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

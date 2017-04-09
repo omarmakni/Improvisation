@@ -3,6 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="scratch_start_gradient">#000</color>
-    <color name="scratch_end_gradient">#FFF</color>
+    <color name="sc">#ffdbc5</color>
+    <color name="scr">#fcccbe</color>
 </resources>
