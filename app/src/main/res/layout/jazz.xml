@@ -4,42 +4,16 @@
     android:layout_height="match_parent">
     <com.cooltechworks.views.ScratchImageView
         android:id="@+id/scratchView1"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@mipmap/ic_launcher"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/scratchView1"
-        android:layout_centerHorizontal="true">
-
-        <RadioButton
-            android:id="@+id/Lollipop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android Lollipop"
-            />
-
-        <RadioButton
-            android:id="@+id/KitKat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android KitKat"
-            />
-
-        <RadioButton
-            android:id="@+id/Marshmallow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android Marshmallow"
-            />
-
-    </RadioGroup>
+        android:text=""/>
 
     <Button
         android:layout_width="wrap_content"
