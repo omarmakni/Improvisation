@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_musique"
+            android:icon="@mipmap/music"
+            android:title="Musique" />
+        <item
+            android:id="@+id/nav_theatre"
+            android:icon="@mipmap/theatre"
+            android:title="Theâtre" />
+        <item
+            android:id="@+id/nav_sculpture"
+            android:icon="@mipmap/sculpture"
+            android:title="sculpture" />
+        <item
+            android:id="@+id/nav_cinema"
+            android:icon="@mipmap/cine"
+            android:title="cinéma" />
+        <item
+            android:id="@+id/nav_litt"
+            android:icon="@mipmap/book"
+            android:title="littérature " />
+        <item
+            android:id="@+id/nav_arts"
+            android:icon="@mipmap/brush"
+            android:title="arts visuels " />
+        <item
+            android:id="@+id/nav_arch"
+            android:icon="@mipmap/imara"
+            android:title="architecture  " />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

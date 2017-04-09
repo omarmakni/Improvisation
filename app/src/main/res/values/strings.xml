@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Improvisation</string>
+    <string name="title_activity_stages_menu">Stages_menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
