@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="sc">#ffdbc5</color>
     <color name="scr">#fcccbe</color>
+    <color name="colw">#FDE3A7</color>
+    <color name="colt">#f9cd68</color>
+    <color name="cola">#fad889</color>
 </resources>

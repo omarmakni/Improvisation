@@ -3,6 +3,8 @@ package com.k2m.improvisation;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class Stages_menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,12 +76,15 @@ public class Stages_menu extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+        MusiqueFragment musiqueFragment = new MusiqueFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
         int id = item.getItemId();
-
-        if (id == R.id.nav_musique) {
-            // Handle the camera action
+        if (id == R.id.nav_musique)
+        {
         } else if (id == R.id.nav_sculpture) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_stages_menu, musiqueFragment).commit();
         } else if (id == R.id.nav_arch) {
 
         } else if (id == R.id.nav_arts) {
@@ -94,7 +100,6 @@ public class Stages_menu extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
